@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - PORT=3000
+      - DATABASE_PATH=/app/data/app.db
+    volumes:
+      - ./backend/data:/app/data
+    ports:
+      - "15002:3000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+      args:
+        VITE_API_URL: http://backend:3000/api
+    environment:
+      - VITE_API_URL=http://backend:3000/api
+    depends_on:
+      - backend
+    ports:
+      - "15001:15001"

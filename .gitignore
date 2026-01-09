@@ -1,0 +1,40 @@
+node_modules/
+dist/
+.vite/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment / local config
+.env
+.env.*
+*.local
+
+# Backend build and data artifacts
+/backend/dist/
+/backend/node_modules/
+/backend/data/
+/backend/*.log
+*.db
+*.sqlite
+
+# ELO system datasets and outputs
+/elo-system/data/
+/elo-system/*.csv
+/elo-system/*.png
+/elo-system/*.ipynb_checkpoints/
+
+# Jupyter notebooks and data
+/jupyter/data/
+
+# Python cache
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Coverage / reports
+coverage/
+*.lcov
+
