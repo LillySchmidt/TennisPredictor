@@ -147,4 +147,4 @@ python query_elo.py
 MIT License - Free to use and modify.
 
 ---
-© 2024 Lilly-Sophie Schmidt
+© 2026 Lilly-Sophie Schmidt
