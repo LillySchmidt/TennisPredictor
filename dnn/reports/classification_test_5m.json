@@ -1,0 +1,8 @@
+{
+  "model": "/home/stijn/lilly/thesis/tennis-predictor-final/dnn/models/cls_5m.pt",
+  "metrics": {
+    "accuracy": 0.8706451024502949,
+    "roc_auc": 0.9565118970284074
+  },
+  "device": "cpu"
+}

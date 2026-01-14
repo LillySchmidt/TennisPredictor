@@ -34,6 +34,16 @@ __pycache__/
 venv/
 .venv/
 
+# ML and DNN data artifacts
+/ML/data/*
+/ML/data/*/**
+!/ML/data/.gitkeep
+!/ML/data/**/.gitkeep
+/dnn/data/*
+/dnn/data/*/**
+!/dnn/data/.gitkeep
+!/dnn/data/**/.gitkeep
+
 # Coverage / reports
 coverage/
 *.lcov

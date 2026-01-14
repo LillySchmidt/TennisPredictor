@@ -1,0 +1,8 @@
+{
+  "model": "/home/stijn/lilly/thesis/tennis-predictor-final/dnn/models/reg_5m.pt",
+  "metrics": {
+    "rmse": 3.0213675892507683,
+    "mae": 1.7005326747894287
+  },
+  "device": "cpu"
+}

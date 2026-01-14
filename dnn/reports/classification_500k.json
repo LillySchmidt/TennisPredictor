@@ -1,0 +1,12 @@
+{
+  "model_size": "500k",
+  "params": 513665,
+  "device": "cuda",
+  "val_loss": 0.25255108914770413,
+  "test_metrics": {
+    "accuracy": 0.8713139174317505,
+    "roc_auc": 0.9562153688564142,
+    "loss": 0.2578417536131972
+  },
+  "epochs_ran": 24
+}
