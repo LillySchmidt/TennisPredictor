@@ -18,6 +18,10 @@ cd backend
 npm install
 npm run dev
 ```
+Or Even Easier
+```bash
+docker-compose up --build -d
+```
 
 The app will be available at `http://localhost:5173`
 
