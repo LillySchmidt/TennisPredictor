@@ -1,0 +1,1596 @@
+{
+  "cross_validation": {
+    "model_name": "logistic_regression",
+    "cv_folds": 5,
+    "timestamp": "2026-01-19T21:29:06.758208",
+    "metrics": {
+      "accuracy": {
+        "test_mean": 0.6631232126880734,
+        "test_std": 0.001179911792451642,
+        "test_min": 0.6614853543815734,
+        "test_max": 0.6646883673984355,
+        "test_scores": [
+          0.6646883673984355,
+          0.6627706283118849,
+          0.6642341660358314,
+          0.6624375473126419,
+          0.6614853543815734
+        ],
+        "train_mean": 0.6631428978837137,
+        "train_std": 0.00029850116359871504,
+        "train_min": 0.6626814602105986,
+        "train_max": 0.663557910673732
+      },
+      "precision": {
+        "test_mean": 0.662353524073328,
+        "test_std": 0.0012512157641227047,
+        "test_min": 0.6608359790499686,
+        "test_max": 0.6644903586852937,
+        "test_scores": [
+          0.6644903586852937,
+          0.6614445943496909,
+          0.662711182622687,
+          0.6622855056589997,
+          0.6608359790499686
+        ],
+        "train_mean": 0.6623781617458124,
+        "train_std": 0.0002839780048979131,
+        "train_min": 0.6619949660867895,
+        "train_max": 0.6628315901167198
+      },
+      "recall": {
+        "test_mean": 0.6629521535257432,
+        "test_std": 0.002216164188723953,
+        "test_min": 0.6603567528212596,
+        "test_max": 0.6663835295069369,
+        "test_scores": [
+          0.6627836427618008,
+          0.6643206730574769,
+          0.6663835295069369,
+          0.6603567528212596,
+          0.6609161694812418
+        ],
+        "train_mean": 0.6629521614558859,
+        "train_std": 0.0005600734526602272,
+        "train_min": 0.6622459968753635,
+        "train_max": 0.6638335954050651
+      },
+      "f1": {
+        "test_mean": 0.6626506989737934,
+        "test_std": 0.001379990694887515,
+        "test_min": 0.6608760718330368,
+        "test_max": 0.6645422826371942,
+        "test_scores": [
+          0.6636359034070775,
+          0.6628795140605608,
+          0.6645422826371942,
+          0.6613197229310973,
+          0.6608760718330368
+        ],
+        "train_mean": 0.6626649390503364,
+        "train_std": 0.00036309126148831864,
+        "train_min": 0.6621204576876512,
+        "train_max": 0.6630426541721633
+      },
+      "roc_auc": {
+        "test_mean": 0.7239485543982944,
+        "test_std": 0.0008894613121678758,
+        "test_min": 0.7223805857274348,
+        "test_max": 0.7251380079407748,
+        "test_scores": [
+          0.7251380079407748,
+          0.7223805857274348,
+          0.7239331266953593,
+          0.7240978385226111,
+          0.7241932131052922
+        ],
+        "train_mean": 0.724039227486015,
+        "train_std": 0.00021929105137210222,
+        "train_min": 0.7237449004837658,
+        "train_max": 0.7244251386407972
+      }
+    },
+    "timing": {
+      "total_training_seconds": 21.152113437652588,
+      "fit_time_per_fold_mean": 13.919286441802978,
+      "fit_time_per_fold_std": 2.192503337941714,
+      "fit_time_per_fold_min": 9.930494546890259,
+      "fit_time_per_fold_max": 16.420628786087036,
+      "score_time_per_fold_mean": 0.27562408447265624,
+      "score_time_per_fold_std": 0.039283633002557376,
+      "fit_times_all_folds": [
+        14.881368637084961,
+        14.816230535507202,
+        9.930494546890259,
+        13.547709703445435,
+        16.420628786087036
+      ],
+      "score_times_all_folds": [
+        0.26123976707458496,
+        0.2555503845214844,
+        0.3524050712585449,
+        0.2670168876647949,
+        0.24190831184387207
+      ]
+    },
+    "memory": {
+      "ram_start_mb": 534.2109375,
+      "ram_end_mb": 518.02734375,
+      "ram_peak_mb": 534.2109375,
+      "ram_used_mb": 0.0
+    }
+  },
+  "hyperparameter_tuning": {
+    "best_params": {
+      "clf__C": 100.0,
+      "clf__max_iter": 1000,
+      "clf__penalty": "l2",
+      "clf__solver": "saga"
+    },
+    "best_f1_score": 0.6625822691145763,
+    "best_index": 17,
+    "n_combinations_tested": 20,
+    "cv_folds": 3,
+    "total_fits": 60,
+    "tuning_time_seconds": 572.249103307724,
+    "tuning_memory": {
+      "ram_start_mb": 518.02734375,
+      "ram_peak_mb": 699.71484375,
+      "ram_used_mb": 181.6875
+    },
+    "all_combinations": [
+      {
+        "rank": 1,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182432822276,
+            "test_std": 0.0005536078911589772,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622114668412502,
+            "test_std": 0.00024244375783564237,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629561954739159,
+            "test_std": 0.0019457866195336966,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625822691145763,
+            "test_std": 0.0010128060600100729,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239432829624041,
+            "test_std": 0.00046668600864038345,
+            "train_mean": 0.7240478206652154,
+            "train_std": 0.00023838131286573543
+          }
+        },
+        "timing": {
+          "mean_fit_time": 16.153934478759766,
+          "std_fit_time": 2.717639148670022,
+          "mean_score_time": 0.5265722274780273,
+          "std_score_time": 0.045231606745620476
+        }
+      },
+      {
+        "rank": 1,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182432822276,
+            "test_std": 0.0005536078911589772,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622114668412502,
+            "test_std": 0.00024244375783564237,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629561954739159,
+            "test_std": 0.0019457866195336966,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625822691145763,
+            "test_std": 0.0010128060600100729,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239432829624041,
+            "test_std": 0.00046668600864038345,
+            "train_mean": 0.7240478206652154,
+            "train_std": 0.00023838131286573543
+          }
+        },
+        "timing": {
+          "mean_fit_time": 16.37242857615153,
+          "std_fit_time": 4.090494098983394,
+          "mean_score_time": 0.47873632113138836,
+          "std_score_time": 0.017258656103024086
+        }
+      },
+      {
+        "rank": 3,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182433066779,
+            "test_std": 0.0005440142861478034,
+            "train_mean": 0.6631635892117943,
+            "train_std": 0.0002587852879233689
+          },
+          "precision": {
+            "test_mean": 0.6622128002954081,
+            "test_std": 0.00023693997950676894,
+            "train_mean": 0.6623126044945169,
+            "train_std": 0.00033649303742525494
+          },
+          "recall": {
+            "test_mean": 0.6629521507064305,
+            "test_std": 0.001934813536268284,
+            "train_mean": 0.6632393444339161,
+            "train_std": 0.00024314746107054343
+          },
+          "f1": {
+            "test_mean": 0.662580920205022,
+            "test_std": 0.0010028227410412971,
+            "train_mean": 0.6627755836608611,
+            "train_std": 0.00020483094431689554
+          },
+          "roc_auc": {
+            "test_mean": 0.7239437294755201,
+            "test_std": 0.0004666953799341613,
+            "train_mean": 0.7240478164719611,
+            "train_std": 0.00023836221795371686
+          }
+        },
+        "timing": {
+          "mean_fit_time": 81.2853741645813,
+          "std_fit_time": 3.9847793668413725,
+          "mean_score_time": 0.4817218780517578,
+          "std_score_time": 0.047694483936316874
+        }
+      },
+      {
+        "rank": 3,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182433066779,
+            "test_std": 0.0005440142861478034,
+            "train_mean": 0.6631635892117943,
+            "train_std": 0.0002587852879233689
+          },
+          "precision": {
+            "test_mean": 0.6622128002954081,
+            "test_std": 0.00023693997950676894,
+            "train_mean": 0.6623126044945169,
+            "train_std": 0.00033649303742525494
+          },
+          "recall": {
+            "test_mean": 0.6629521507064305,
+            "test_std": 0.001934813536268284,
+            "train_mean": 0.6632393444339161,
+            "train_std": 0.00024314746107054343
+          },
+          "f1": {
+            "test_mean": 0.662580920205022,
+            "test_std": 0.0010028227410412971,
+            "train_mean": 0.6627755836608611,
+            "train_std": 0.00020483094431689554
+          },
+          "roc_auc": {
+            "test_mean": 0.7239437294755201,
+            "test_std": 0.0004666953799341613,
+            "train_mean": 0.7240478164719611,
+            "train_std": 0.00023836221795371686
+          }
+        },
+        "timing": {
+          "mean_fit_time": 84.07300448417664,
+          "std_fit_time": 1.9458683825151377,
+          "mean_score_time": 0.45714863141377765,
+          "std_score_time": 0.0038806208765418647
+        }
+      },
+      {
+        "rank": 5,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630162246095049,
+            "test_std": 0.0005529277867089373,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.662210104653151,
+            "test_std": 0.000243726502745642,
+            "train_mean": 0.6623132859003406,
+            "train_std": 0.00033719130432523415
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019427207664681788,
+            "train_mean": 0.6632413668421998,
+            "train_std": 0.0002450688681430184
+          },
+          "f1": {
+            "test_mean": 0.6625795705499856,
+            "test_std": 0.0010111482347724104,
+            "train_mean": 0.6627769347451435,
+            "train_std": 0.00020672639073653117
+          },
+          "roc_auc": {
+            "test_mean": 0.723943307266178,
+            "test_std": 0.0004666930798475495,
+            "train_mean": 0.7240478114963107,
+            "train_std": 0.00023838198210850888
+          }
+        },
+        "timing": {
+          "mean_fit_time": 301.3738088607788,
+          "std_fit_time": 10.316353977225019,
+          "mean_score_time": 0.47235385576883954,
+          "std_score_time": 0.028436368642328822
+        }
+      },
+      {
+        "rank": 5,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630162246095049,
+            "test_std": 0.0005529277867089373,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.662210104653151,
+            "test_std": 0.000243726502745642,
+            "train_mean": 0.6623132859003406,
+            "train_std": 0.00033719130432523415
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019427207664681788,
+            "train_mean": 0.6632413668421998,
+            "train_std": 0.0002450688681430184
+          },
+          "f1": {
+            "test_mean": 0.6625795705499856,
+            "test_std": 0.0010111482347724104,
+            "train_mean": 0.6627769347451435,
+            "train_std": 0.00020672639073653117
+          },
+          "roc_auc": {
+            "test_mean": 0.7239433096134205,
+            "test_std": 0.00046669158241180756,
+            "train_mean": 0.7240478103471478,
+            "train_std": 0.00023838405573598596
+          }
+        },
+        "timing": {
+          "mean_fit_time": 515.3095803260803,
+          "std_fit_time": 20.580421120498308,
+          "mean_score_time": 0.5971744060516357,
+          "std_score_time": 0.215234753767019
+        }
+      },
+      {
+        "rank": 7,
+        "params": {
+          "clf__C": 1.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 1.0, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005495098253906177,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.6622074322567921,
+            "test_std": 0.00023685688848298835,
+            "train_mean": 0.6623139391198826,
+            "train_std": 0.00033630562162917735
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019431502133534012,
+            "train_mean": 0.6632393444216454,
+            "train_std": 0.00024422183393322427
+          },
+          "f1": {
+            "test_mean": 0.6625782294205428,
+            "test_std": 0.0010096096197491887,
+            "train_mean": 0.6627762531436642,
+            "train_std": 0.0002073108211567806
+          },
+          "roc_auc": {
+            "test_mean": 0.7239447726716279,
+            "test_std": 0.00046639908468822805,
+            "train_mean": 0.7240478298708318,
+            "train_std": 0.00023836569700081566
+          }
+        },
+        "timing": {
+          "mean_fit_time": 17.916420936584473,
+          "std_fit_time": 1.2984418960374418,
+          "mean_score_time": 0.5720039208730062,
+          "std_score_time": 0.09224013256819269
+        }
+      },
+      {
+        "rank": 7,
+        "params": {
+          "clf__C": 1.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 1.0, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005495098253906177,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.6622074322567921,
+            "test_std": 0.00023685688848298835,
+            "train_mean": 0.6623139391198826,
+            "train_std": 0.00033630562162917735
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019431502133534012,
+            "train_mean": 0.6632393444216454,
+            "train_std": 0.00024422183393322427
+          },
+          "f1": {
+            "test_mean": 0.6625782294205428,
+            "test_std": 0.0010096096197491887,
+            "train_mean": 0.6627762531436642,
+            "train_std": 0.0002073108211567806
+          },
+          "roc_auc": {
+            "test_mean": 0.7239447726716279,
+            "test_std": 0.00046639908468822805,
+            "train_mean": 0.7240478298708318,
+            "train_std": 0.00023836569700081566
+          }
+        },
+        "timing": {
+          "mean_fit_time": 15.82790501912435,
+          "std_fit_time": 1.971354541172604,
+          "mean_score_time": 0.5458085536956787,
+          "std_score_time": 0.07653064215214823
+        }
+      },
+      {
+        "rank": 9,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005508652400363154,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622087431554786,
+            "test_std": 0.00024184288664709448,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629481058407808,
+            "test_std": 0.0019400717611169891,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625768707787046,
+            "test_std": 0.001008998825902253,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239434360214045,
+            "test_std": 0.0004666581678444608,
+            "train_mean": 0.7240478302987045,
+            "train_std": 0.0002383824373963753
+          }
+        },
+        "timing": {
+          "mean_fit_time": 17.04286726315816,
+          "std_fit_time": 3.144449463011171,
+          "mean_score_time": 0.5231699148813883,
+          "std_score_time": 0.021238444517345263
+        }
+      },
+      {
+        "rank": 9,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005508652400363154,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622087431554786,
+            "test_std": 0.00024184288664709448,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629481058407808,
+            "test_std": 0.0019400717611169891,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625768707787046,
+            "test_std": 0.001008998825902253,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239434360214045,
+            "test_std": 0.0004666581678444608,
+            "train_mean": 0.7240478302987045,
+            "train_std": 0.0002383824373963753
+          }
+        },
+        "timing": {
+          "mean_fit_time": 16.972397009531658,
+          "std_fit_time": 2.64906751651807,
+          "mean_score_time": 0.4970901807149251,
+          "std_score_time": 0.0015841477765642714
+        }
+      },
+      {
+        "rank": 11,
+        "params": {
+          "clf__C": 0.01,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.01, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182432700024,
+            "test_std": 0.0005544538595716384,
+            "train_mean": 0.6631575332211329,
+            "train_std": 0.00023181868179296904
+          },
+          "precision": {
+            "test_mean": 0.6622206485908364,
+            "test_std": 0.00024338812466783577,
+            "train_mean": 0.6623117851787822,
+            "train_std": 0.00031373480581894746
+          },
+          "recall": {
+            "test_mean": 0.6629278816106963,
+            "test_std": 0.00195426633560879,
+            "train_mean": 0.6632170979673354,
+            "train_std": 0.0002184162724587442
+          },
+          "f1": {
+            "test_mean": 0.6625727082549991,
+            "test_std": 0.001016118500770056,
+            "train_mean": 0.6627640670116627,
+            "train_std": 0.0001726095214840237
+          },
+          "roc_auc": {
+            "test_mean": 0.7239544982368029,
+            "test_std": 0.0004649881646443409,
+            "train_mean": 0.7240450554146709,
+            "train_std": 0.00023722168375930457
+          }
+        },
+        "timing": {
+          "mean_fit_time": 7.16829514503479,
+          "std_fit_time": 0.10634508926080963,
+          "mean_score_time": 0.5239696502685547,
+          "std_score_time": 0.01265115192633465
+        }
+      },
+      {
+        "rank": 11,
+        "params": {
+          "clf__C": 0.01,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.01, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182432700024,
+            "test_std": 0.0005544538595716384,
+            "train_mean": 0.6631575332211329,
+            "train_std": 0.00023181868179296904
+          },
+          "precision": {
+            "test_mean": 0.6622206485908364,
+            "test_std": 0.00024338812466783577,
+            "train_mean": 0.6623117851787822,
+            "train_std": 0.00031373480581894746
+          },
+          "recall": {
+            "test_mean": 0.6629278816106963,
+            "test_std": 0.00195426633560879,
+            "train_mean": 0.6632170979673354,
+            "train_std": 0.0002184162724587442
+          },
+          "f1": {
+            "test_mean": 0.6625727082549991,
+            "test_std": 0.001016118500770056,
+            "train_mean": 0.6627640670116627,
+            "train_std": 0.0001726095214840237
+          },
+          "roc_auc": {
+            "test_mean": 0.7239544982368029,
+            "test_std": 0.0004649881646443409,
+            "train_mean": 0.7240450554146709,
+            "train_std": 0.00023722168375930457
+          }
+        },
+        "timing": {
+          "mean_fit_time": 7.151670932769775,
+          "std_fit_time": 0.23415844630292856,
+          "mean_score_time": 0.555376132329305,
+          "std_score_time": 0.03477881028276292
+        }
+      },
+      {
+        "rank": 13,
+        "params": {
+          "clf__C": 1.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 1.0, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630121873129603,
+            "test_std": 0.0005283501426562321,
+            "train_mean": 0.6631494584935667,
+            "train_std": 0.00024396685260641562
+          },
+          "precision": {
+            "test_mean": 0.6622113679564658,
+            "test_std": 0.00022330710934890196,
+            "train_mean": 0.6623004353830183,
+            "train_std": 0.0003256578481441305
+          },
+          "recall": {
+            "test_mean": 0.6629319265745105,
+            "test_std": 0.0019301684637912744,
+            "train_mean": 0.6632191203510782,
+            "train_std": 0.00022903261034169236
+          },
+          "f1": {
+            "test_mean": 0.6625700864700754,
+            "test_std": 0.0009915262730772608,
+            "train_mean": 0.6627593918053917,
+            "train_std": 0.00018564625999422136
+          },
+          "roc_auc": {
+            "test_mean": 0.7239469586087667,
+            "test_std": 0.0004661769672590873,
+            "train_mean": 0.7240473969573271,
+            "train_std": 0.00023817233505408266
+          }
+        },
+        "timing": {
+          "mean_fit_time": 17.415350834528606,
+          "std_fit_time": 6.354080821103713,
+          "mean_score_time": 0.6330567200978597,
+          "std_score_time": 0.16815427630635907
+        }
+      },
+      {
+        "rank": 13,
+        "params": {
+          "clf__C": 1.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 1.0, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630121873129603,
+            "test_std": 0.0005283501426562321,
+            "train_mean": 0.6631494584935667,
+            "train_std": 0.00024396685260641562
+          },
+          "precision": {
+            "test_mean": 0.6622113679564658,
+            "test_std": 0.00022330710934890196,
+            "train_mean": 0.6623004353830183,
+            "train_std": 0.0003256578481441305
+          },
+          "recall": {
+            "test_mean": 0.6629319265745105,
+            "test_std": 0.0019301684637912744,
+            "train_mean": 0.6632191203510782,
+            "train_std": 0.00022903261034169236
+          },
+          "f1": {
+            "test_mean": 0.6625700864700754,
+            "test_std": 0.0009915262730772608,
+            "train_mean": 0.6627593918053917,
+            "train_std": 0.00018564625999422136
+          },
+          "roc_auc": {
+            "test_mean": 0.7239469586087667,
+            "test_std": 0.0004661769672590873,
+            "train_mean": 0.7240473969573271,
+            "train_std": 0.00023817233505408266
+          }
+        },
+        "timing": {
+          "mean_fit_time": 15.538986523946127,
+          "std_fit_time": 6.308812604194731,
+          "mean_score_time": 0.5361642837524414,
+          "std_score_time": 0.022348366744497312
+        }
+      },
+      {
+        "rank": 15,
+        "params": {
+          "clf__C": 0.1,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.1, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630061312458915,
+            "test_std": 0.0005426868486746416,
+            "train_mean": 0.6631565238419834,
+            "train_std": 0.00025754752901630717
+          },
+          "precision": {
+            "test_mean": 0.662200670225341,
+            "test_std": 0.00023306959515242487,
+            "train_mean": 0.6623058609467513,
+            "train_std": 0.00033449411973536703
+          },
+          "recall": {
+            "test_mean": 0.6629400162567278,
+            "test_std": 0.0019264918075521788,
+            "train_mean": 0.6632312547762399,
+            "train_std": 0.0002412446716527482
+          },
+          "f1": {
+            "test_mean": 0.6625688039068857,
+            "test_std": 0.000999624492491864,
+            "train_mean": 0.6627681692200648,
+            "train_std": 0.00020404719372468195
+          },
+          "roc_auc": {
+            "test_mean": 0.723949814671176,
+            "test_std": 0.0004655050725169863,
+            "train_mean": 0.7240470468811621,
+            "train_std": 0.00023808192198024807
+          }
+        },
+        "timing": {
+          "mean_fit_time": 11.425844669342041,
+          "std_fit_time": 0.7651102019676468,
+          "mean_score_time": 0.5195478598276774,
+          "std_score_time": 0.007827806620611008
+        }
+      },
+      {
+        "rank": 15,
+        "params": {
+          "clf__C": 0.1,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.1, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630061312458915,
+            "test_std": 0.0005426868486746416,
+            "train_mean": 0.6631565238419834,
+            "train_std": 0.00025754752901630717
+          },
+          "precision": {
+            "test_mean": 0.662200670225341,
+            "test_std": 0.00023306959515242487,
+            "train_mean": 0.6623058609467513,
+            "train_std": 0.00033449411973536703
+          },
+          "recall": {
+            "test_mean": 0.6629400162567278,
+            "test_std": 0.0019264918075521788,
+            "train_mean": 0.6632312547762399,
+            "train_std": 0.0002412446716527482
+          },
+          "f1": {
+            "test_mean": 0.6625688039068857,
+            "test_std": 0.000999624492491864,
+            "train_mean": 0.6627681692200648,
+            "train_std": 0.00020404719372468195
+          },
+          "roc_auc": {
+            "test_mean": 0.723949814671176,
+            "test_std": 0.0004655050725169863,
+            "train_mean": 0.7240470468811621,
+            "train_std": 0.00023808192198024807
+          }
+        },
+        "timing": {
+          "mean_fit_time": 12.110196987787882,
+          "std_fit_time": 0.7682778422260245,
+          "mean_score_time": 0.5957454840342203,
+          "std_score_time": 0.07290112637467058
+        }
+      },
+      {
+        "rank": 17,
+        "params": {
+          "clf__C": 0.1,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.1, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6629879628368567,
+            "test_std": 0.0006553766172636531,
+            "train_mean": 0.6631666172025406,
+            "train_std": 0.00026799501189241385
+          },
+          "precision": {
+            "test_mean": 0.6622052075109055,
+            "test_std": 0.00031262652826219184,
+            "train_mean": 0.6623546439307147,
+            "train_std": 0.00034431880719782055
+          },
+          "recall": {
+            "test_mean": 0.6628510289670214,
+            "test_std": 0.0020983184075790396,
+            "train_mean": 0.6631220444466946,
+            "train_std": 0.0001505951984559522
+          },
+          "f1": {
+            "test_mean": 0.6625264921413578,
+            "test_std": 0.0011302245233890363,
+            "train_mean": 0.6627380752668325,
+            "train_std": 0.00019928442736665518
+          },
+          "roc_auc": {
+            "test_mean": 0.7239571942402403,
+            "test_std": 0.0004644473589339849,
+            "train_mean": 0.7240424289915374,
+            "train_std": 0.00023657010461564877
+          }
+        },
+        "timing": {
+          "mean_fit_time": 7.709541241327922,
+          "std_fit_time": 0.4773570087359759,
+          "mean_score_time": 0.5706575711568197,
+          "std_score_time": 0.03160967332420531
+        }
+      },
+      {
+        "rank": 17,
+        "params": {
+          "clf__C": 0.1,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.1, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6629879628368567,
+            "test_std": 0.0006553766172636531,
+            "train_mean": 0.6631666172025406,
+            "train_std": 0.00026799501189241385
+          },
+          "precision": {
+            "test_mean": 0.6622052075109055,
+            "test_std": 0.00031262652826219184,
+            "train_mean": 0.6623546439307147,
+            "train_std": 0.00034431880719782055
+          },
+          "recall": {
+            "test_mean": 0.6628510289670214,
+            "test_std": 0.0020983184075790396,
+            "train_mean": 0.6631220444466946,
+            "train_std": 0.0001505951984559522
+          },
+          "f1": {
+            "test_mean": 0.6625264921413578,
+            "test_std": 0.0011302245233890363,
+            "train_mean": 0.6627380752668325,
+            "train_std": 0.00019928442736665518
+          },
+          "roc_auc": {
+            "test_mean": 0.7239571942402403,
+            "test_std": 0.0004644473589339849,
+            "train_mean": 0.7240424289915374,
+            "train_std": 0.00023657010461564877
+          }
+        },
+        "timing": {
+          "mean_fit_time": 9.563937028249105,
+          "std_fit_time": 0.6021317070953337,
+          "mean_score_time": 0.6629188060760498,
+          "std_score_time": 0.07848492539616954
+        }
+      },
+      {
+        "rank": 19,
+        "params": {
+          "clf__C": 0.01,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.01, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630687100636191,
+            "test_std": 0.0005865503031418931,
+            "train_mean": 0.6631302810690819,
+            "train_std": 0.0002254243743860717
+          },
+          "precision": {
+            "test_mean": 0.662417835505559,
+            "test_std": 0.0003913737778879483,
+            "train_mean": 0.662460566301086,
+            "train_std": 0.0001918042700951291
+          },
+          "recall": {
+            "test_mean": 0.6625274432489582,
+            "test_std": 0.0020831610696587575,
+            "train_mean": 0.6626467760949911,
+            "train_std": 0.000591689454104265
+          },
+          "f1": {
+            "test_mean": 0.6624709368189488,
+            "test_std": 0.0010591804691002424,
+            "train_mean": 0.6625535308347309,
+            "train_std": 0.0003303408833286701
+          },
+          "roc_auc": {
+            "test_mean": 0.7239825735020097,
+            "test_std": 0.0004698767794661364,
+            "train_mean": 0.7240193713867425,
+            "train_std": 0.00023633392638446326
+          }
+        },
+        "timing": {
+          "mean_fit_time": 7.663876056671143,
+          "std_fit_time": 0.9960320138543868,
+          "mean_score_time": 0.6201515197753906,
+          "std_score_time": 0.10130342210751375
+        }
+      },
+      {
+        "rank": 19,
+        "params": {
+          "clf__C": 0.01,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 0.01, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630687100636191,
+            "test_std": 0.0005865503031418931,
+            "train_mean": 0.6631302810690819,
+            "train_std": 0.0002254243743860717
+          },
+          "precision": {
+            "test_mean": 0.662417835505559,
+            "test_std": 0.0003913737778879483,
+            "train_mean": 0.662460566301086,
+            "train_std": 0.0001918042700951291
+          },
+          "recall": {
+            "test_mean": 0.6625274432489582,
+            "test_std": 0.0020831610696587575,
+            "train_mean": 0.6626467760949911,
+            "train_std": 0.000591689454104265
+          },
+          "f1": {
+            "test_mean": 0.6624709368189488,
+            "test_std": 0.0010591804691002424,
+            "train_mean": 0.6625535308347309,
+            "train_std": 0.0003303408833286701
+          },
+          "roc_auc": {
+            "test_mean": 0.7239825735020097,
+            "test_std": 0.0004698767794661364,
+            "train_mean": 0.7240193713867425,
+            "train_std": 0.00023633392638446326
+          }
+        },
+        "timing": {
+          "mean_fit_time": 6.872579018274943,
+          "std_fit_time": 0.11274845648927607,
+          "mean_score_time": 0.6132055918375651,
+          "std_score_time": 0.11293572888287369
+        }
+      }
+    ],
+    "top_10_combinations": [
+      {
+        "rank": 1,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182432822276,
+            "test_std": 0.0005536078911589772,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622114668412502,
+            "test_std": 0.00024244375783564237,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629561954739159,
+            "test_std": 0.0019457866195336966,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625822691145763,
+            "test_std": 0.0010128060600100729,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239432829624041,
+            "test_std": 0.00046668600864038345,
+            "train_mean": 0.7240478206652154,
+            "train_std": 0.00023838131286573543
+          }
+        },
+        "timing": {
+          "mean_fit_time": 16.153934478759766,
+          "std_fit_time": 2.717639148670022,
+          "mean_score_time": 0.5265722274780273,
+          "std_score_time": 0.045231606745620476
+        }
+      },
+      {
+        "rank": 1,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182432822276,
+            "test_std": 0.0005536078911589772,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622114668412502,
+            "test_std": 0.00024244375783564237,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629561954739159,
+            "test_std": 0.0019457866195336966,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625822691145763,
+            "test_std": 0.0010128060600100729,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239432829624041,
+            "test_std": 0.00046668600864038345,
+            "train_mean": 0.7240478206652154,
+            "train_std": 0.00023838131286573543
+          }
+        },
+        "timing": {
+          "mean_fit_time": 16.37242857615153,
+          "std_fit_time": 4.090494098983394,
+          "mean_score_time": 0.47873632113138836,
+          "std_score_time": 0.017258656103024086
+        }
+      },
+      {
+        "rank": 3,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182433066779,
+            "test_std": 0.0005440142861478034,
+            "train_mean": 0.6631635892117943,
+            "train_std": 0.0002587852879233689
+          },
+          "precision": {
+            "test_mean": 0.6622128002954081,
+            "test_std": 0.00023693997950676894,
+            "train_mean": 0.6623126044945169,
+            "train_std": 0.00033649303742525494
+          },
+          "recall": {
+            "test_mean": 0.6629521507064305,
+            "test_std": 0.001934813536268284,
+            "train_mean": 0.6632393444339161,
+            "train_std": 0.00024314746107054343
+          },
+          "f1": {
+            "test_mean": 0.662580920205022,
+            "test_std": 0.0010028227410412971,
+            "train_mean": 0.6627755836608611,
+            "train_std": 0.00020483094431689554
+          },
+          "roc_auc": {
+            "test_mean": 0.7239437294755201,
+            "test_std": 0.0004666953799341613,
+            "train_mean": 0.7240478164719611,
+            "train_std": 0.00023836221795371686
+          }
+        },
+        "timing": {
+          "mean_fit_time": 81.2853741645813,
+          "std_fit_time": 3.9847793668413725,
+          "mean_score_time": 0.4817218780517578,
+          "std_score_time": 0.047694483936316874
+        }
+      },
+      {
+        "rank": 3,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630182433066779,
+            "test_std": 0.0005440142861478034,
+            "train_mean": 0.6631635892117943,
+            "train_std": 0.0002587852879233689
+          },
+          "precision": {
+            "test_mean": 0.6622128002954081,
+            "test_std": 0.00023693997950676894,
+            "train_mean": 0.6623126044945169,
+            "train_std": 0.00033649303742525494
+          },
+          "recall": {
+            "test_mean": 0.6629521507064305,
+            "test_std": 0.001934813536268284,
+            "train_mean": 0.6632393444339161,
+            "train_std": 0.00024314746107054343
+          },
+          "f1": {
+            "test_mean": 0.662580920205022,
+            "test_std": 0.0010028227410412971,
+            "train_mean": 0.6627755836608611,
+            "train_std": 0.00020483094431689554
+          },
+          "roc_auc": {
+            "test_mean": 0.7239437294755201,
+            "test_std": 0.0004666953799341613,
+            "train_mean": 0.7240478164719611,
+            "train_std": 0.00023836221795371686
+          }
+        },
+        "timing": {
+          "mean_fit_time": 84.07300448417664,
+          "std_fit_time": 1.9458683825151377,
+          "mean_score_time": 0.45714863141377765,
+          "std_score_time": 0.0038806208765418647
+        }
+      },
+      {
+        "rank": 5,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 1000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630162246095049,
+            "test_std": 0.0005529277867089373,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.662210104653151,
+            "test_std": 0.000243726502745642,
+            "train_mean": 0.6623132859003406,
+            "train_std": 0.00033719130432523415
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019427207664681788,
+            "train_mean": 0.6632413668421998,
+            "train_std": 0.0002450688681430184
+          },
+          "f1": {
+            "test_mean": 0.6625795705499856,
+            "test_std": 0.0010111482347724104,
+            "train_mean": 0.6627769347451435,
+            "train_std": 0.00020672639073653117
+          },
+          "roc_auc": {
+            "test_mean": 0.723943307266178,
+            "test_std": 0.0004666930798475495,
+            "train_mean": 0.7240478114963107,
+            "train_std": 0.00023838198210850888
+          }
+        },
+        "timing": {
+          "mean_fit_time": 301.3738088607788,
+          "std_fit_time": 10.316353977225019,
+          "mean_score_time": 0.47235385576883954,
+          "std_score_time": 0.028436368642328822
+        }
+      },
+      {
+        "rank": 5,
+        "params": {
+          "clf__C": 100.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l1",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 100.0, 'clf__max_iter': 2000, 'clf__penalty': 'l1', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630162246095049,
+            "test_std": 0.0005529277867089373,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.662210104653151,
+            "test_std": 0.000243726502745642,
+            "train_mean": 0.6623132859003406,
+            "train_std": 0.00033719130432523415
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019427207664681788,
+            "train_mean": 0.6632413668421998,
+            "train_std": 0.0002450688681430184
+          },
+          "f1": {
+            "test_mean": 0.6625795705499856,
+            "test_std": 0.0010111482347724104,
+            "train_mean": 0.6627769347451435,
+            "train_std": 0.00020672639073653117
+          },
+          "roc_auc": {
+            "test_mean": 0.7239433096134205,
+            "test_std": 0.00046669158241180756,
+            "train_mean": 0.7240478103471478,
+            "train_std": 0.00023838405573598596
+          }
+        },
+        "timing": {
+          "mean_fit_time": 515.3095803260803,
+          "std_fit_time": 20.580421120498308,
+          "mean_score_time": 0.5971744060516357,
+          "std_score_time": 0.215234753767019
+        }
+      },
+      {
+        "rank": 7,
+        "params": {
+          "clf__C": 1.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 1.0, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005495098253906177,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.6622074322567921,
+            "test_std": 0.00023685688848298835,
+            "train_mean": 0.6623139391198826,
+            "train_std": 0.00033630562162917735
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019431502133534012,
+            "train_mean": 0.6632393444216454,
+            "train_std": 0.00024422183393322427
+          },
+          "f1": {
+            "test_mean": 0.6625782294205428,
+            "test_std": 0.0010096096197491887,
+            "train_mean": 0.6627762531436642,
+            "train_std": 0.0002073108211567806
+          },
+          "roc_auc": {
+            "test_mean": 0.7239447726716279,
+            "test_std": 0.00046639908468822805,
+            "train_mean": 0.7240478298708318,
+            "train_std": 0.00023836569700081566
+          }
+        },
+        "timing": {
+          "mean_fit_time": 17.916420936584473,
+          "std_fit_time": 1.2984418960374418,
+          "mean_score_time": 0.5720039208730062,
+          "std_score_time": 0.09224013256819269
+        }
+      },
+      {
+        "rank": 7,
+        "params": {
+          "clf__C": 1.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 1.0, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005495098253906177,
+            "train_mean": 0.6631645985481557,
+            "train_std": 0.0002600171959729844
+          },
+          "precision": {
+            "test_mean": 0.6622074322567921,
+            "test_std": 0.00023685688848298835,
+            "train_mean": 0.6623139391198826,
+            "train_std": 0.00033630562162917735
+          },
+          "recall": {
+            "test_mean": 0.6629521506573482,
+            "test_std": 0.0019431502133534012,
+            "train_mean": 0.6632393444216454,
+            "train_std": 0.00024422183393322427
+          },
+          "f1": {
+            "test_mean": 0.6625782294205428,
+            "test_std": 0.0010096096197491887,
+            "train_mean": 0.6627762531436642,
+            "train_std": 0.0002073108211567806
+          },
+          "roc_auc": {
+            "test_mean": 0.7239447726716279,
+            "test_std": 0.00046639908468822805,
+            "train_mean": 0.7240478298708318,
+            "train_std": 0.00023836569700081566
+          }
+        },
+        "timing": {
+          "mean_fit_time": 15.82790501912435,
+          "std_fit_time": 1.971354541172604,
+          "mean_score_time": 0.5458085536956787,
+          "std_score_time": 0.07653064215214823
+        }
+      },
+      {
+        "rank": 9,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 1000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 1000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005508652400363154,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622087431554786,
+            "test_std": 0.00024184288664709448,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629481058407808,
+            "test_std": 0.0019400717611169891,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625768707787046,
+            "test_std": 0.001008998825902253,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239434360214045,
+            "test_std": 0.0004666581678444608,
+            "train_mean": 0.7240478302987045,
+            "train_std": 0.0002383824373963753
+          }
+        },
+        "timing": {
+          "mean_fit_time": 17.04286726315816,
+          "std_fit_time": 3.144449463011171,
+          "mean_score_time": 0.5231699148813883,
+          "std_score_time": 0.021238444517345263
+        }
+      },
+      {
+        "rank": 9,
+        "params": {
+          "clf__C": 10.0,
+          "clf__max_iter": 2000,
+          "clf__penalty": "l2",
+          "clf__solver": "saga"
+        },
+        "params_str": "{'clf__C': 10.0, 'clf__max_iter': 2000, 'clf__penalty': 'l2', 'clf__solver': 'saga'}",
+        "metrics": {
+          "accuracy": {
+            "test_mean": 0.6630142059367822,
+            "test_std": 0.0005508652400363154,
+            "train_mean": 0.6631625798754329,
+            "train_std": 0.00025755539856324076
+          },
+          "precision": {
+            "test_mean": 0.6622087431554786,
+            "test_std": 0.00024184288664709448,
+            "train_mean": 0.6623119230804347,
+            "train_std": 0.0003357960755383059
+          },
+          "recall": {
+            "test_mean": 0.6629481058407808,
+            "test_std": 0.0019400717611169891,
+            "train_mean": 0.6632373220256322,
+            "train_std": 0.00024124466016525842
+          },
+          "f1": {
+            "test_mean": 0.6625768707787046,
+            "test_std": 0.001008998825902253,
+            "train_mean": 0.6627742325683862,
+            "train_std": 0.00020293577290327294
+          },
+          "roc_auc": {
+            "test_mean": 0.7239434360214045,
+            "test_std": 0.0004666581678444608,
+            "train_mean": 0.7240478302987045,
+            "train_std": 0.0002383824373963753
+          }
+        },
+        "timing": {
+          "mean_fit_time": 16.972397009531658,
+          "std_fit_time": 2.64906751651807,
+          "mean_score_time": 0.4970901807149251,
+          "std_score_time": 0.0015841477765642714
+        }
+      }
+    ],
+    "summary_statistics": {
+      "best_f1": 0.6625822691145763,
+      "worst_f1": 0.6624709368189488,
+      "mean_f1": 0.6625606887661097,
+      "std_f1": 3.365195096678489e-05,
+      "best_accuracy": 0.6630687100636191,
+      "best_precision": 0.662417835505559,
+      "best_recall": 0.6629561954739159,
+      "best_roc_auc": 0.7239825735020097
+    }
+  }
+}

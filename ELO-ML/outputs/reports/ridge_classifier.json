@@ -1,0 +1,46 @@
+{
+  "model_name": "ridge_classifier",
+  "metric_rank": "accuracy",
+  "train_time_seconds": 2.1785547733306885,
+  "train_samples": 396299,
+  "val_samples": 12384,
+  "test_samples": 86691,
+  "val_metrics": {
+    "accuracy": 0.6763565891472868,
+    "precision": 0.675044304817142,
+    "recall": 0.6778838375667368,
+    "f1": 0.6764610913787537,
+    "log_loss": 0.6270307253176445,
+    "brier": 0.21791843356683738,
+    "roc_auc": 0.7454337282926415,
+    "pr_auc": 0.7387486898316058
+  },
+  "test_metrics": {
+    "accuracy": 0.6746144351778155,
+    "precision": 0.6728662946889853,
+    "recall": 0.6773142262799029,
+    "f1": 0.6750829340213785,
+    "log_loss": 0.6275345805040221,
+    "brier": 0.21816327461087817,
+    "roc_auc": 0.7426676140810472,
+    "pr_auc": 0.7352013027944131
+  },
+  "features": [
+    "surface",
+    "round",
+    "tourney_level",
+    "best_of",
+    "draw_size",
+    "year",
+    "playerA_rank",
+    "playerB_rank",
+    "elo_a",
+    "elo_b",
+    "rank_diff",
+    "log_playerA_rank",
+    "log_playerB_rank",
+    "log_rank_diff",
+    "round_code",
+    "elo_diff"
+  ]
+}

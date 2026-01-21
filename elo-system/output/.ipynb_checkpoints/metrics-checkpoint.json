@@ -1,0 +1,51 @@
+{
+  "csv": "../dnn_old/all_matches.csv",
+  "levels": [
+    "A",
+    "G",
+    "M"
+  ],
+  "matches_used": 133138,
+  "rows_scored": 266276,
+  "date_min": "1973-08-29",
+  "date_max": "2024-11-04",
+  "elo_config": {
+    "initial_elo": 1500.0,
+    "mean_elo": 1500.0,
+    "k_factors": {
+      "G": 48,
+      "F": 40,
+      "M": 36,
+      "A": 32,
+      "O": 24
+    },
+    "round_multipliers": {
+      "F": 1.25,
+      "SF": 1.15,
+      "QF": 1.1,
+      "R16": 1.05,
+      "R32": 1.0,
+      "R64": 0.95,
+      "R128": 0.9,
+      "RR": 1.1,
+      "BR": 1.0
+    },
+    "decay_enabled": true,
+    "decay_days_threshold": 60,
+    "decay_rate_per_day": 0.5,
+    "decay_cap": 200.0,
+    "mov_enabled": true,
+    "mov_multiplier": 0.1
+  },
+  "metrics": {
+    "n": 266276,
+    "accuracy": 0.6587375505114993,
+    "log_loss": 0.6110962868441815,
+    "brier": 0.21185341483745984,
+    "roc_auc": 0.7245239108173644,
+    "pr_auc": 0.7190851877695055,
+    "f1": 0.6588528565958118,
+    "precision": 0.6586303179511814,
+    "recall": 0.6590755456744131
+  }
+}
